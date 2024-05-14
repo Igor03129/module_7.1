@@ -4,8 +4,8 @@ import pytest
 
 
 @pytest.fixture
-def go_to_url(selenium):
+def go_to_url(page):
     @allure.step('Открытие страницы {url}')
     def callback(url):
-        selenium.get(url)
+        page.goto(url, wait_until='domcontentloaded')
     return callback

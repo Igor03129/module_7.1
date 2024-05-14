@@ -1,40 +1,32 @@
 import pytest
 from allure_commons._allure import step
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
+from playwright.sync_api import ElementHandle
 
 
 class TestCountProfessions:
     @pytest.fixture
-    def setup_count_profession_test(self, go_to_url, selenium):
+    def setup_count_profession_test(self, go_to_url, wait_element) -> ElementHandle:
         go_to_url('https://skillbox.ru/')
 
         with step("Переход в блок профессии"):
-            blockProf = WebDriverWait(selenium, timeout=60).until(
-                lambda driver: driver.find_element(By.XPATH, './/h2[contains(text(), "Профессии")]/following-sibling::a/span')
-            )
-            blockProf.click()
-        with step('Ожидаем элимент с количеством профессий в странице'):
-            actual_element = WebDriverWait(selenium, timeout=60).until(
-                lambda driver: driver.find_element(By.CSS_SELECTOR, '.courses-block > button')
-            )
-        return actual_element
+            wait_element('//h3[contains(text(), "Профессии")]/following-sibking::a/span').click()
+
+        return wait_element('.courses-block > .courses-block__load')
 
 
     def test_default_count(self, setup_count_profession_test):
 
-        actual_text = setup_count_profession_test.text
+        actual_text = setup_count_profession_test.inner_text()
         expected_text = 'Ещё 10 профессий из 89'
-        assert expected_text in actual_text
+        with step(f'Проверка, что в кнопке загрузки содержится текст "{expected_text}"'):
+            assert expected_text in actual_text
 
-    def test_count_after_load_additional_professions(self, setup_count_profession_test, selenium):
+    def test_count_after_load_additional_professions(self, setup_count_profession_test, wait_element):
         default_count_button = setup_count_profession_test
         expected_text = 'Ещё 10 профессий из 79'
-        default_count_button.click()
+        with step('Загрузка второй страницы'):
+            default_count_button.click()
 
-        actual_element = WebDriverWait(selenium, timeout=60).until(
-            lambda driver: driver.find_element(
-                By.XPATH,
-                f'.//courses-block/button[contains(text(), {expected_text})]'
-            )
-        )
+        wait_element(f"//*[contains(@class, 'courses-block')]/*[contains(@class, 'courses-block__load')]"
+                     f"[contains(text(), '{expected_text}')]")
+ # f'.//courses-block/button[contains(text(), {expected_text})]'

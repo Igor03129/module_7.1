@@ -4,32 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="243788a7-3810-4397-9b17-06e6986b024a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/video_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/wait.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fixtures/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fixtures/system/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fixtures/system/browser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/count_professions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/count_professions/test_count_professions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/search_filter_menu/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/search_filter_menu/test_filter_menu.py" afterDir="false" />
+    <list default="true" id="243788a7-3810-4397-9b17-06e6986b024a" name="Changes" comment="module7.1">
       <change beforePath="$PROJECT_DIR$/../../module_6/pythonProject1" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_6/pythonProject1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module_6/pythonProject1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_6/pythonProject1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/wait.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/count_professions/test_count_professions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/count_professions/test_count_professions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/search_filter_menu/test_filter_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/search_filter_menu/test_filter_menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,23 +33,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_count_professions.TestCountProfessions.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_count_professions.TestCountProfessions.test_default_count.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Igor/python-autotests-basic/module_7/video_1/src/actions&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_count_professions.TestCountProfessions.executor": "Run",
+    "Python tests.Python tests for test_count_professions.TestCountProfessions.test_default_count.executor": "Run",
+    "Python tests.Python tests for test_filter_menu.TestFilterMenu.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Igor/python-autotests-basic/module_7/video_1/src/actions",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Igor\python-autotests-basic\module_7\video_1\src\actions" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_count_professions.TestCountProfessions">
+  <component name="RunManager" selected="Python tests.Python tests for test_filter_menu.TestFilterMenu">
     <configuration name="Python tests for test_count_professions.TestCountProfessions" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="video_1" />
       <option name="ENV_FILES" value="" />
@@ -97,8 +81,24 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_filter_menu.TestFilterMenu" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="video_1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/search_filter_menu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_filter_menu.TestFilterMenu&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_filter_menu.TestFilterMenu" />
         <item itemvalue="Python tests.Python tests for test_count_professions.TestCountProfessions" />
         <item itemvalue="Python tests.Python tests for test_count_professions.TestCountProfessions.test_default_count" />
       </list>
@@ -120,17 +120,19 @@
       <option name="presentableId" value="Default" />
       <updated>1714394800543</updated>
     </task>
+    <task id="LOCAL-00001" summary="module7.1">
+      <option name="closed" value="true" />
+      <created>1715678112496</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715678112496</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/count_professions/test_count_professions.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="module7.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="module7.1" />
   </component>
 </project>
