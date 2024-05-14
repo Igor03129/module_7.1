@@ -1,0 +1,9 @@
+name: skillbox_7
+dependencies:
+  - python=3.11.0
+  - pip:
+      - selenium
+      - chromedriver-binary==126.0.6446.0
+      - pytest
+      - allure-pytest
+      - flake8
